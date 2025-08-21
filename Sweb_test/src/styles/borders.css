@@ -1,0 +1,25 @@
+/* Standard border utilities for the project */
+
+:root {
+  --border-light: #ded9de;
+  --border-medium: #c0b8c1;
+  --border-dark: #9d919f;
+}
+
+.border-light {
+  border-color: var(--border-light);
+}
+
+.border-medium {
+  border-color: var(--border-medium);
+}
+
+.border-dark {
+  border-color: var(--border-dark);
+}
+
+/* Example usage:
+   <div class="border border-light">...</div>
+   <div class="border-2 border-medium">...</div>
+   <div class="border-b border-dark">...</div>
+*/
