@@ -32,7 +32,7 @@ const sizeClass = {
   lg: "text-[18px] leading-[22px]",
 };
 
-const Button = ({
+const GradientButton = ({
   label = "Button",
   variant = "gradient",
   bg = "bg-magenta-600",
@@ -94,4 +94,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default GradientButton;

@@ -1,20 +1,46 @@
-// Composant de recherche 
+import React from 'react';
 
-const img = "http://localhost:3845/assets/4f9c1bea302b2700e67c610f14e0f464a54d6c68.svg";
+const SearchIcon = () => (
+  <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+  </svg>
+);
 
-export default function InputSearch({ state = "Default", size = "Default", placeholder = "Search here", onSearch }) {
+
+const InputSearch = ({ 
+  value, 
+  onChange, 
+  onSubmit, 
+  placeholder,
+  disabled = false 
+}) => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (onSubmit && value.trim()) {
+      onSubmit(value);
+    }
+  };
+
   return (
-    <div className="bg-neutral-50 box-border flex gap-1 items-center pl-2 pr-4 py-2 rounded-full w-full relative" data-name={`State=${state}, Size=${size}`}>  
-      <div aria-hidden="true" className="absolute border border-[#e9e7e9] inset-0 pointer-events-none rounded-full" />
-      <button type="button" className="flex items-center justify-center p-2 rounded-full shrink-0 w-8 h-8" tabIndex={-1}>
-        <img src={img} alt="search" className="w-5 h-5" />
-      </button>
+    <form onSubmit={handleSubmit} className="relative w-full">
+      <div className="absolute inset-y-0 left-0 pl-4 sm:pl-5 flex items-center pointer-events-none z-10">
+        <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
+      </div>
       <input
         type="text"
-        className="flex-grow bg-transparent outline-none text-[#9d919F] text-base min-w-0"
-        placeholder={placeholder}
-        onKeyDown={e => e.key === 'Enter' && onSearch && onSearch(e.target.value)}
+        placeholder={placeholder || t('location_screen.search_here')}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        disabled={disabled}
+        className="w-full h-12 sm:h-14 pl-12 sm:pl-14 pr-4 sm:pr-5 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+        style={{ fontSize: '16px' }} // Prevents zoom on iOS
       />
-    </div>
+      <button type="submit" className="sr-only">
+        Rechercher
+      </button>
+    </form>
   );
-}
+};
+
+export default InputSearch;

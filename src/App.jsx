@@ -1,5 +1,6 @@
 import './App.css'
 import OnboardingStepOne from './pages/onboarding/OnboardingStepOne.jsx'
+import LocationScreen from './pages/onboarding/LocationScreen.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         {/*<Route path="/" element={<Authscreen />} />
         <Route path="/register" element={<Register />} />*/}
-        <Route path="/" element={<OnboardingStepOne />} />
+        <Route path="/" element={<LocationScreen />} />
         <Route path="/onboarding-one" element={<OnboardingStepOne />} />
       </Routes>
     </Router>
