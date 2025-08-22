@@ -21,7 +21,7 @@
   --font-dm-sans: "DM Sans", sans-serif;
   --font-rethink-sans: "Rethink Sans", sans-serif;
   /* Neutral variable per spec */
-  --neutral-50: #F5F4F5;
+  --neutral-50: #F2F1F2;
 }
 
 /* Custom utilities (Tailwind v4) */
@@ -49,56 +49,28 @@
 @utility bg-neutral-50-var {
   background-color: var(--neutral-50, #F5F4F5);
 }
-=======
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import "tailwindcss";
+
 @import "./styles/margins.css";
 
-@theme {
-  /* Colors (mapped from tailwind.config.js) */
-  --color-amethyst-600: #E91EDB;
-  --color-magenta-600: #EE1477;
-  --color-primary-orange: #FF7C44;
-  --color-primary-amethyst: #E91EDB;
-  --color-primary-blue: #C6E1FF;
-  --color-neutral-black: #1B181B;
-  --color-main-dark-bg: #292524;
-
-  /* Additional neutrals (optional aliases) */
-  --color-background: #ffffff;
-  --color-foreground: #1B181B;
-
-  /* Fonts */
-  --font-dm-sans: "DM Sans", sans-serif;
-  --font-rethink-sans: "Rethink Sans", sans-serif;
-  /* Neutral variable per spec */
-  --neutral-50: #F5F4F5;
+html, body, #root {
+  margin: 0;
+  padding: 0;
 }
 
-/* Custom utilities (Tailwind v4) */
-@utility title-h1 {
-  @apply font-rethink-sans text-[28px] leading-[32px] font-[750] not-italic text-neutral-black;
+/* Tes classes personnalisées */
+@import "./styles/custom.css";
+
+/* Reset du body et html */
+html, body, #root {
+  margin: 0;
+  padding: 0;
 }
 
-@utility gradient-primary {
-  background-image: linear-gradient(135deg, var(--color-amethyst-600), var(--color-primary-orange));
-}
-
-/* Gradient applied to text (use with headings) */
-@utility gradient-text-primary {
-  background-image: linear-gradient(135deg, var(--color-amethyst-600), var(--color-primary-orange));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Reusable button backgrounds */
-@utility btn-gradient-bg {
-  background-image: radial-gradient(87.44% 173.96% at 50% 0%, #FF7C44 0%, #FD2A94 100%);
-}
-
-@utility bg-neutral-50-var {
-  background-color: var(--neutral-50, #F5F4F5);
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
