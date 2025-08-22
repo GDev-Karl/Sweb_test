@@ -1,4 +1,4 @@
-// Barre de navigation inférieure
+import Button from "./Button";
 
 const img3 = "http://localhost:3845/assets/7c7a7311d30c24a8a49007477866958664080400.svg";
 
@@ -11,9 +11,7 @@ export default function BottomNavigation({ onBack, onNext }) {
           <img src={img3} alt="back" className="w-5 h-5" />
           <span className="font-semibold text-[#1b181b] text-base">Go back</span>
         </button>
-        <button className="flex items-center gap-2 h-12 px-6 py-3 rounded-full font-semibold text-white text-base bg-gradient-to-r from-[#ff7c44] via-[#fe536c] to-[#fd2a94]" onClick={onNext}>
-          Next
-        </button>
+        <Button> Next </Button>
       </div>
     </div>
   );
