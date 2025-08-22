@@ -126,6 +126,11 @@ export default {
         '18': '4.5rem',
         '88': '22rem',
         '128': '32rem',
+        // Reusable auth layout margins
+        'auth-vh': '12vh',
+        'auth-xs': '340px',
+        'auth-md': '240px',
+        'auth-lg': '300px',
       },
 
       // ===================== BORDER RADIUS =====================
