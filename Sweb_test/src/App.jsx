@@ -1,15 +1,16 @@
-
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Authscreen from './page/auth/authscreen.jsx';
+import Register from './page/auth/register.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Authscreen />} />
-        {/* Ajoutez d'autres routes ici si nécessaire */}
+        <Route path="/register" element={<Register />} />
+        {/* Add other routes here if needed */}
       </Routes>
     </Router>
   );
