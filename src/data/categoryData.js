@@ -35,6 +35,7 @@ export const ALL_CATEGORIES_DATA = [
     image: `/images/Nails.png`,
     color: 'bg-blue-400'
   },
+/*
   {
     id: 7,
     name: 'Tools & Devices',
@@ -47,4 +48,5 @@ export const ALL_CATEGORIES_DATA = [
     image: `/images/Fragance.png`,
     color: 'bg-orange-400'
   }
+*/
 ];

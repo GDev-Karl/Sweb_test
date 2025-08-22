@@ -21,7 +21,7 @@
   --font-dm-sans: "DM Sans", sans-serif;
   --font-rethink-sans: "Rethink Sans", sans-serif;
   /* Neutral variable per spec */
-  --neutral-50: #F5F4F5;
+  --neutral-50: #F2F1F2;
 }
 
 /* Custom utilities (Tailwind v4) */

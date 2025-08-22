@@ -59,7 +59,7 @@ export default {
         neutral: {
           white: '#ffffff',
           black: '#1B181B',
-          50: '#f8f7f8',
+          50: '#F2F1F2',
           100: '#f0eef0',
           200: '#ded9de',
           300: '#c0b8c1',
