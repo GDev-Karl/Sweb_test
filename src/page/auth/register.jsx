@@ -8,15 +8,15 @@ const Register = () => {
 
   return (
     <>
-      {/* Header with logo (same gutters as the auth screen) */}
+      {/* En-tête avec logo (mêmes gutters que l'auth screen) */}
       <header className="w-full px-4 py-4 flex justify-start md:justify-center">
         <SwebLogo />
       </header>
 
-      {/* Text + actions block fixed 32px above the bottom (same margins) */}
+      {/* Bloc texte + actions fixé 32px au-dessus du bas (mêmes marges) */}
       <div className="absolute left-0 right-0 bottom-[32px] px-4 sm:px-6 lg:px-8">
         <div className="max-w-[360px] mx-auto flex flex-col items-start gap-3 sm:gap-4 w-full">
-          {/* Title */}
+          {/* Titre */}
           <div className="w-full text-left">
             <h1 className="text-[22px] sm:text-[24px] md:text-[28px] font-bold leading-tight text-neutral-black font-rethink-sans">
               Create your account
@@ -65,4 +65,3 @@ const Register = () => {
 };
 
 export default Register;
-

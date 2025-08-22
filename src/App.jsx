@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Authscreen />} />
         <Route path="/register" element={<Register />} />
-        {/* Add other routes here if needed */}
+        {/* Ajoutez d'autres routes ici si nécessaire */}
       </Routes>
     </Router>
   );

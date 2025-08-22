@@ -7,15 +7,15 @@ const Authscreen = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* Header with logo */}
+      {/* En-tête avec logo */}
       <header className="w-full px-4 py-4 flex justify-start md:justify-center">
         <SwebLogo />
       </header>
 
-      {/* Text + buttons block fixed 32px above the bottom */}
+      {/* Bloc texte + boutons fixé 32px au-dessus du bas */}
       <div className="absolute left-0 right-0 bottom-[32px] px-4 sm:px-6 lg:px-8">
         <div className="max-w-[360px] mx-auto flex flex-col items-start gap-3 sm:gap-4 w-full">
-          {/* Title */}
+          {/* Titre */}
           <div className="w-full text-left">
             <h1 className="text-[22px] sm:text-[24px] md:text-[28px] font-bold leading-tight text-neutral-black font-rethink-sans">
               Create an account to continue
@@ -34,7 +34,7 @@ const Authscreen = () => {
             </p>
           </div>
 
-          {/* Buttons */}
+          {/* Boutons */}
           <div className="flex flex-col gap-2 sm:gap-3 w-full">
             {/* Email */}
             <Button
@@ -44,7 +44,7 @@ const Authscreen = () => {
               gradientEnd="#FD2A94"
               textColor="text-white"
               size="md"
-              fullWidth={true} // takes 100% of the container
+              fullWidth={true} // prend 100% du conteneur
               onClick={() => navigate("/register")}
             />
 
@@ -107,4 +107,3 @@ const Authscreen = () => {
 };
 
 export default Authscreen;
-
