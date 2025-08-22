@@ -49,8 +49,8 @@ const Register = () => {
         <SwebLogo />
       </header>
 
-      {/* Bloc texte + actions fixé 32px au-dessus du bas (mêmes marges que Authscreen) */}
-      <div className="absolute left-0 right-0 bottom-[32px] px-4 sm:px-6 lg:px-8 ">
+      {/* Bloc contenu avec mêmes marges que Authscreen, en scroll */}
+      <div className="px-4 sm:px-6 lg:px-4 pb-[32px]">
         <div className="pr-[16px] pl-[16px] w-full">
           {/* Titre */}
           <div className="w-full text-left">
@@ -217,17 +217,16 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Disclaimer (moved below buttons) */}
+          {/* Disclaimer */}
+          <div className="mt-[16px]">
+            <p className="text-[16px] leading-[16px] font-normal text-neutral-600 font-DM-sans text-left">
+              By signing up, you agree to our{' '}
+              <span className="text-gray-500 cursor-pointer underline transition-colors font-medium">
+                Terms and Privacy Policy
+              </span>
+            </p>
+          </div>
         </div>
-        <div className="mt-[16px] mb-[16px] mx-[24px]">
-                <p className="text-[16px] leading-[16px] font-normal text-neutral-600 font-DM-sans text-left">
-                By signing up, you agree to our{' '}
-                  <span className="text-gray-500 cursor-pointer underline transition-colors font-medium">
-                  Terms and Privacy Policy
-
-                  </span>
-                </p>
-              </div>
       </div>
     </>
   );
