@@ -1,0 +1,54 @@
+/* Standard margin utilities for the project */
+
+:root {
+  --margin-xs: 4px;
+  --margin-sm: 8px;
+  --margin-md: 16px;
+  --margin-lg: 24px;
+  --margin-xl: 32px;
+}
+
+.margin-xs {
+  margin: var(--margin-xs);
+}
+.margin-sm {
+  margin: var(--margin-sm);
+}
+.margin-md {
+  margin: var(--margin-md);
+}
+.margin-lg {
+  margin: var(--margin-lg);
+}
+.margin-xl {
+  margin: var(--margin-xl);
+}
+
+.margin-top-xs { margin-top: var(--margin-xs); }
+.margin-top-sm { margin-top: var(--margin-sm); }
+.margin-top-md { margin-top: var(--margin-md); }
+.margin-top-lg { margin-top: var(--margin-lg); }
+.margin-top-xl { margin-top: var(--margin-xl); }
+
+.margin-bottom-xs { margin-bottom: var(--margin-xs); }
+.margin-bottom-sm { margin-bottom: var(--margin-sm); }
+.margin-bottom-md { margin-bottom: var(--margin-md); }
+.margin-bottom-lg { margin-bottom: var(--margin-lg); }
+.margin-bottom-xl { margin-bottom: var(--margin-xl); }
+
+.margin-left-xs { margin-left: var(--margin-xs); }
+.margin-left-sm { margin-left: var(--margin-sm); }
+.margin-left-md { margin-left: var(--margin-md); }
+.margin-left-lg { margin-left: var(--margin-lg); }
+.margin-left-xl { margin-left: var(--margin-xl); }
+
+.margin-right-xs { margin-right: var(--margin-xs); }
+.margin-right-sm { margin-right: var(--margin-sm); }
+.margin-right-md { margin-right: var(--margin-md); }
+.margin-right-lg { margin-right: var(--margin-lg); }
+.margin-right-xl { margin-right: var(--margin-xl); }
+
+/* Example usage:
+   <div class="margin-md">...</div>
+   <div class="margin-top-lg margin-bottom-xs">...</div>
+*/
