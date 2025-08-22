@@ -1,13 +1,11 @@
 import './App.css'
+import './index.css'
+import OnboardingScreen from './pages/OnboardingScreen'
 
 function App() {
 
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <OnboardingScreen />
   )
 }
 
