@@ -1,8 +1,8 @@
 import { useState } from "react";
-import TopNavigation from "./Components/TopNavigation";
-import InputSearch from "./Components/InputSearch";
-import LocationMap from "./Components/LocationMap";
-import BottomNavigation from "./Components/BottomNavigation";
+import TopNavigation from "../../components/TopNavigation";
+import InputSearch from "../../components/InputSearch";
+import LocationMap from "../../components/LocationMap";
+import BottomNavigation from "../../components/BottomNavigation";
 
 export default function OnboardingStepOne() {
   const [position, setPosition] = useState([45.7772, 3.0870]); // Position initiale (Clermont-Ferrand)
