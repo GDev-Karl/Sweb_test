@@ -1,11 +1,12 @@
 import './App.css'
 import './index.css'
-import OnboardingScreen from './pages/OnboardingScreen'
+import OnboardingServicesScreen from './pages/OnboardingServicesScreen'
+import OnboardingSlidesScreen from './pages/OnboardingSlidesScreen'
 
 function App() {
 
   return (
-    <OnboardingScreen />
+    <OnboardingServicesScreen />
   )
 }
 

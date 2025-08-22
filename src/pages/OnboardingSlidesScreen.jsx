@@ -4,7 +4,7 @@ import OnboardingSlide from "../components/onboardingSlide";
 import ProgressDots from "../components/progressDots";
 import SwebLogo from "../components/Logo";
 
-const OnboardingScreen = () => {
+const OnboardingSlidesScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
@@ -127,4 +127,4 @@ const OnboardingScreen = () => {
   );
 };
 
-export default OnboardingScreen;
+export default OnboardingSlidesScreen;
